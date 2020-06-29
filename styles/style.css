@@ -1,0 +1,101 @@
+/*通用全局文本样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+html,body {
+    background-color: #fff;
+    height: 100%;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* 通用页眉样式 */
+#header {
+    width: 100%;
+    border-bottom: 5px solid #800080;
+    flex: 0 0 auto;
+}
+#header a {
+    text-decoration: none
+}
+#header a:hover { 
+    text-decoration: none;
+    color: #7f1083
+}
+#header-inner {}
+
+/*页眉图文样式*/
+#title {
+    color: #333;
+    font-weight: bold;
+    width: 380px;
+}
+#title a {
+    color: #333;
+}
+#header.show-image #header-inner {/*顶部图标位置*/
+    margin: 0 auto;
+    width: 960px;
+    position: relative;
+    padding-top: 10px; 
+}
+
+/* 导航栏样式 */
+#main-nav,
+#sub-nav {
+    position: absolute;
+    text-align: left;
+    right: 0;
+    top: -24px;
+}
+#main-nav {/*顶部导航栏位置*/
+    top: 32px;
+    width: 560px;
+}
+#main-nav li,
+#sub-nav li {
+    display:inline-block;*display:inline;*zoom:1;
+    list-style: none;
+    margin-left: 1em;
+}
+#main-nav li {
+    margin-left: 2em;
+    margin-bottom: 10px;
+}
+#main-nav a {
+    color: #000000;
+    font-size: 24px;
+    font-weight: normal;
+}
+#sub-nav a {
+    color: #777;
+    font-size: 12px;
+}
+
+/* 主题内容 */
+#main {
+    background: gray;
+    flex: 1 0 auto;
+}
+
+/* homepage专属框架 */
+#linkblock {
+  display: flex;
+  list-style: none;
+  padding:center;
+}
+
+/* 通用注脚样式 */
+#footer {
+    background-color: #ededed;
+    color:#a5a8aa;
+    flex: 0 0 auto;
+    text-shadow: 0 1px 0 #fff;
+}
+#footer a {
+    color:#a5a8aa;
+}

@@ -1,24 +1,65 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang"zh-CN">
 <head>
-	<meta charset="utf-8" />
-	<title>测试用网页-NOGImeme-test</title>
-	<link rel="stylesheet" href="demo.css"/>
+  <!DOCTYPE html>
+  <meta charset="UTF-8">
+  <title>Minnasuki-homepage</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-	<p>NOGImeme<a class="bg" href="http://www.baidu.com" title="NOGI(www)" target="_blank">链接</a>
-	<p class="odd">第一段</p>
-	<p class="bg">第二段</p>
-	<h1 class="odd bg">大标题</h1>
-	<div class="onediv">
-	<h2>分类标题</h2>
-	<p>分类标签</p>
-	<p>分类描述</p>
-	</div>
-	<div class="twodiv">
-	<p>分类标签</p>
-	<p>分类描述</p>
-	</div>
+<div id="container">
+  <!-- 页眉标签 -->
+    <div id="header" class="show-image">
+      <div id="header-inner">
+        <h1 id="title"><a href="index.html"><img src="images/testpic.png" alt="Nogi-DD" title="DD无罪！"  height="" width="215"></a></h1>
+        <nav id="main-nav">
+        <br>
+          <div>
+            <ul>
+              <li><a href="index.html">主页</a></li>
+              <li><a href="music.html">音乐</a></li>
+              <li><a href="live.html">演出</a></li>
+              <li><a href="member.html">成员</a></li>
+              <li><a href="meme.html">施工中⚠</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+  </div>
+
+  <!-- 主体内容 -->   
+  <div id="main">
+    <!-- 动态广告图片 -->
+    <div>
+      <h2>だれでもだいすき</h2>
+      <p class="highlight">Have a lovely day ❤<br/>Saito Asuka</p>
+    </div>
+
+    <!-- 官方门户指引 -->
+    <div><!-- 官方门户指引 -->
+      <ul id="linkblock">
+        <li><a href="http://www.nogizaka46.com/" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-jp-web.png" alt="官方网站"></a></li>
+        <li><a href="https://https://www.nogizaka46-cn.com/" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-cn-web.png" alt="中国会员站"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCUzpZpX2wRYOk3J8QTFGxDg" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-ytb.png" alt="YouTube频道"></a></li>
+        <li><a href="https://twitter.com/nogizaka46" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-twitter.png" alt="Twitter主页"></a></li>
+        <li><a href ="https://weibo.com/u/6372196907?refer_flag=0000015012_&from=feed&loc=nickname&is_all=1" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-weibo.png" alt="微博主页"></a></li>
+        <li><a href="https://www.facebook.com/nogizaka46" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-facebook.png" alt="Facebook主页"></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 注脚声明 -->
+  <div id="footer">
+    <p class="copy">声明</p>
+  </div>
+
+  <!-- 脚本加载 -->
+  <a class="to-top"><img src="images/totop.png"></a>
+  <script src="scripts/jquery-1.11.3.min.js"></script>
+  <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+  <script src="scripts/jquery.toTop.min.js"></script>
+  <script src="scripts/main.js" defer></script>
+</div>
 </body>
 </html>
