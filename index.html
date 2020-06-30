@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang"zh-CN">
 <head>
-  <!DOCTYPE html>
   <meta charset="UTF-8">
-  <title>NPGI-DD</title>
+  <title>Minnasuki-homepage</title>
+  <!-- CSS样式加载 -->
   <link rel="stylesheet" href="styles/style.css">
+  <script type="text/javascript" src="scripts/jquery.min.js"></script> 
+  <script type="text/javascript" src="scripts/jquery.SuperSlide.js"></script>
 </head>
 
 <body>
@@ -30,36 +32,53 @@
 
   <!-- 主体内容 -->   
   <div id="main">
-    <!-- 动态广告图片 -->
-    <div>
-      <h2>だれでもだいすき</h2>
-      <p class="highlight">Have a lovely day ❤<br/>Saito Asuka</p>
+    <!-- 滚动广告栏(施工中...js载入问题，框体大小问题) -->
+  <div id="slider-3">
+    <div class="slider">
+      <div class="bd">
+        <ul>
+          <li><a href="#" target="_blank"><img src="images/adpic/1.png" ></a></li>
+          <li><a href="#" target="_blank"><img src="images/adpic/2.png" ></a></li>
+          <li><a href="#" target="_blank"><img src="images/adpic/3.png" ></a></li>
+          <li><a href="#" target="_blank"><img src="images/adpic/4.png" ></a></li>
+        </ul>
+      </div>
+      <ol class="hd cl dots">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ol>
     </div>
+  </div>	
 
     <!-- 官方门户指引 -->
-    <div><!-- 官方门户指引 -->
-      <ul id="linkblock">
-        <li><a href="http://www.nogizaka46.com/" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-jp-web.png" alt="官方网站"></a></li>
-        <li><a href="https://https://www.nogizaka46-cn.com/" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-cn-web.png" alt="中国会员站"></a></li>
-        <li><a href="https://www.youtube.com/channel/UCUzpZpX2wRYOk3J8QTFGxDg" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-ytb.png" alt="YouTube频道"></a></li>
-        <li><a href="https://twitter.com/nogizaka46" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-twitter.png" alt="Twitter主页"></a></li>
-        <li><a href ="https://weibo.com/u/6372196907?refer_flag=0000015012_&from=feed&loc=nickname&is_all=1" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-weibo.png" alt="微博主页"></a></li>
-        <li><a href="https://www.facebook.com/nogizaka46" target="_blank" style="color:#023780;text-decoration:underline;"><img src="images/nogi-facebook.png" alt="Facebook主页"></a></li>
+      <div id="linkbox">
+      <ul>
+        <li><a href="http://www.nogizaka46.com/" target="_blank"><img src="images/weblink/nogijp.png" alt="官方网站"></a></li>
+        <li><a href="https://www.nogizaka46-cn.com" target="_blank"><img src="images/weblink/nogicn.png" alt="中国会员站"></a></li>
+        <li><a href="https://www.youtube.com/channel/UCUzpZpX2wRYOk3J8QTFGxDg" target="_blank"><img src="images/weblink/youtube.png" alt="YouTube频道"></a></li>
+        <li><a href="https://twitter.com/nogizaka46" target="_blank"><img src="images/weblink/twitter.png" alt="Twitter主页"></a></li>
+        <li><a href ="https://weibo.com/u/6372196907?is_all=1" target="_blank"><img src="images/weblink/weibo.png" alt="微博主页"></a></li>
+        <li><a href="https://www.facebook.com/nogizaka46" target="_blank"><img src="images/weblink/facebook.png" alt="Facebook主页"></a></li>
       </ul>
     </div>
   </div>
-
+</div>
   <!-- 注脚声明 -->
   <div id="footer">
-    <p class="copy">声明</p>
+    <span>出大事了 大家都好可爱啊</span>
   </div>
+  <a class="to-top"><img src="images/totop.png" title="返回顶部"></a>
 
-  <!-- 脚本加载 -->
-  <a class="to-top"><img src="images/totop.png"></a>
-  <script src="scripts/jquery-1.11.3.min.js"></script>
-  <!--<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>-->
+  <!-- JS加载区 -->
+  <script type="text/javascript" src="scripts/jcarousellite.min.js"></script><!-- 滚动 -->
+  
+  <script src="scripts/jquery.min.js"></script><!-- 返回顶部按钮 -->
   <script src="scripts/jquery.toTop.min.js"></script>
+
   <script src="scripts/main.js" defer></script>
-</div>
+
 </body>
+
 </html>
