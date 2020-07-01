@@ -5,8 +5,9 @@
   <title>Nogi-DD-homepage</title>
   <!-- CSS样式加载 -->
   <link rel="stylesheet" href="styles/style.css">
-  <script type="text/javascript" src="scripts/jquery.min.js"></script> 
-  <script type="text/javascript" src="scripts/jquery.SuperSlide.js"></script>
+  <script type="text/javascript" src="scripts/jquery1.42.min.js"></script> <!-- 本地jquery库 -->
+  <script type="text/javascript" src="scripts/jquery.SuperSlide.min.js"></script><!-- superslide插件 -->
+  <script type="text/javascript" src="scripts/jquery.toTop.min.js"></script><!--返回顶部插件-->
 </head>
 
 <body>
@@ -32,25 +33,28 @@
 
   <!-- 主体内容 -->   
   <div id="main">
-    <!-- 滚动广告栏(施工中...js载入问题，框体大小问题) -->
-  <div id="slider-3">
-    <div class="slider">
+    <!-- 滚动广告栏(施工中...调整样式) -->
+    
+    <div class="picFocus">
       <div class="bd">
         <ul>
-          <li><a href="#" target="_blank"><img src="images/adpic/1.png" ></a></li>
-          <li><a href="#" target="_blank"><img src="images/adpic/2.png" ></a></li>
-          <li><a href="#" target="_blank"><img src="images/adpic/3.png" ></a></li>
-          <li><a href="#" target="_blank"><img src="images/adpic/4.png" ></a></li>
+          <li><a target="_blank" href="#"><img src="images/adpic/1.png" /></a></li>
+          <li><a target="_blank" href="#"><img src="images/adpic/2.png" /></a></li>
+          <li><a target="_blank" href="#"><img src="images/adpic/3.png" /></a></li>
+          <li><a target="_blank" href="#"><img src="images/adpic/4.png" /></a></li>
         </ul>
       </div>
-      <ol class="hd cl dots">
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-      </ol>
+      <div class="hd">
+        <ul>
+          <li><img src="images/adpic/1.png" /></li>
+          <li><img src="images/adpic/2.png" /></li>
+          <li><img src="images/adpic/3.png" /></li>
+          <li><img src="images/adpic/4.png" /></li>
+        </ul>
+      </div>
     </div>
-  </div>	
+    <!--调用滚动广告插件-->
+    <script type="text/javascript">jQuery(".picFocus").slide({ mainCell:".bd ul",effect:"left",autoPlay:true });</script>
 
     <!-- 官方门户指引 -->
       <div id="linkbox">
@@ -66,18 +70,13 @@
   </div>
 </div>
   <!-- 注脚声明 -->
-  <div id="footer">
+  <div id="footer"><!-- ...施工中 jq库改动导致失效 -->
     <span>出大事了 大家都好可爱啊</span>
   </div>
+
+  <!-- 返回顶部按钮 --><!-- ...施工中 jq库改动导致失效 -->
   <a class="to-top"><img src="images/totop.png" title="返回顶部"></a>
-
-  <!-- JS加载区 -->
-  <script type="text/javascript" src="scripts/jcarousellite.min.js"></script><!-- 滚动 -->
-  
-  <script src="scripts/jquery.min.js"></script><!-- 返回顶部按钮 -->
-  <script src="scripts/jquery.toTop.min.js"></script>
-
-  <script src="scripts/main.js" defer></script>
+  <!--调用返回顶部插件-->
 
 </body>
 
