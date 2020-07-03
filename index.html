@@ -5,9 +5,10 @@
   <title>Nogi-DD-homepage</title>
   <!-- CSS样式加载 -->
   <link rel="stylesheet" href="styles/style.css">
-  <script type="text/javascript" src="scripts/jquery1.42.min.js"></script> <!-- 本地jquery库 -->
+  <!-- JS脚本加载 -->
+  <script type="text/javascript" src="scripts/jquery1.42.min.js"></script> <!-- 本地jquery库1.42ver -->
   <script type="text/javascript" src="scripts/jquery.SuperSlide.min.js"></script><!-- superslide插件 -->
-  <script type="text/javascript" src="scripts/jquery.toTop.min.js"></script><!--返回顶部插件-->
+  <script type="text/javascript" src="scripts/totop.js"></script><!-- 返回顶部按钮插件 -->
 </head>
 
 <body>
@@ -32,8 +33,8 @@
   </div>
 
   <!-- 主体内容 -->   
-  <div id="main">
-    <!-- 滚动广告栏(施工中...调整样式) -->
+  <div id="page">
+    <!-- 滚动焦点图片广告栏(施工中...缺少动态导入图片功能) -->
     
     <div class="picFocus">
       <div class="bd">
@@ -53,30 +54,32 @@
         </ul>
       </div>
     </div>
-    <!--调用滚动广告插件-->
+    <!--立即调用焦点图片插件-->
     <script type="text/javascript">jQuery(".picFocus").slide({ mainCell:".bd ul",effect:"left",autoPlay:true });</script>
+</br>
+      <p style="text-align: center;font-size:26px;"><b>人間 いつまでも好きではいられない</b></p>
+      <p style="line-height:30px;text-align:center;padding-left: 520px;"><em>——Saito Asuka</em></p>
 
     <!-- 官方门户指引 -->
       <div id="linkbox">
-      <ul>
-        <li><a href="http://www.nogizaka46.com/" target="_blank"><img src="images/weblink/nogijp.png" alt="官方网站"></a></li>
-        <li><a href="https://www.nogizaka46-cn.com" target="_blank"><img src="images/weblink/nogicn.png" alt="中国会员站"></a></li>
-        <li><a href="https://www.youtube.com/channel/UCUzpZpX2wRYOk3J8QTFGxDg" target="_blank"><img src="images/weblink/youtube.png" alt="YouTube频道"></a></li>
-        <li><a href="https://twitter.com/nogizaka46" target="_blank"><img src="images/weblink/twitter.png" alt="Twitter主页"></a></li>
-        <li><a href ="https://weibo.com/u/6372196907?is_all=1" target="_blank"><img src="images/weblink/weibo.png" alt="微博主页"></a></li>
-        <li><a href="https://www.facebook.com/nogizaka46" target="_blank"><img src="images/weblink/facebook.png" alt="Facebook主页"></a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+        <ul>
+          <li><a title="官方网站" href="http://www.nogizaka46.com/" target="_blank"><img src="images/weblink/nogijp.png" alt="官方网站"></a></li>
+          <li><a title="中国会员站" href="https://www.nogizaka46-cn.com" target="_blank"><img src="images/weblink/nogicn.png" alt="中国会员站"></a></li>
+          <li><a title="YouTube频道" href="https://www.youtube.com/channel/UCUzpZpX2wRYOk3J8QTFGxDg" target="_blank"><img src="images/weblink/youtube.png" alt="YouTube频道"></a></li>
+          <li><a title="@nogizaka46" href="https://twitter.com/nogizaka46" target="_blank"><img src="images/weblink/twitter.png" alt="Twitter主页"></a></li>
+          <li><a title="@乃木坂46" href ="https://weibo.com/u/6372196907?is_all=1" target="_blank"><img src="images/weblink/weibo.png" alt="微博主页"></a></li>
+          <li><a title="@nogizaka46" href="https://www.facebook.com/nogizaka46" target="_blank"><img src="images/weblink/facebook.png" alt="Facebook主页"></a></li>
+        </ul>
+      </div>
+
   <!-- 注脚声明 -->
-  <div id="footer"><!-- ...施工中 jq库改动导致失效 -->
+  <div id="footer">
     <span>出大事了 大家都好可爱啊</span>
   </div>
+</div>
 
-  <!-- 返回顶部按钮 --><!-- ...施工中 jq库改动导致失效 -->
-  <a class="to-top"><img src="images/totop.png" title="返回顶部"></a>
-  <!--调用返回顶部插件-->
+  <!-- 返回顶部按钮 -->
+  <button type=button onclick="topFunction()" id="totop">返回顶部</button>
 
 </body>
 

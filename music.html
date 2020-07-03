@@ -2,9 +2,13 @@
 <html lang"zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>Minnasuki-homepage</title>
+  <title>Nogi-DD-homepage</title>
   <!-- CSS样式加载 -->
   <link rel="stylesheet" href="styles/style.css">
+  <!-- JS脚本加载 -->
+  <script type="text/javascript" src="scripts/jquery1.42.min.js"></script> <!-- 本地jquery库1.42ver -->
+  <script type="text/javascript" src="scripts/jquery.SuperSlide.min.js"></script><!-- superslide插件 -->
+  <script type="text/javascript" src="scripts/totop.js"></script><!-- 返回顶部按钮插件 -->
 </head>
 
 <body>
@@ -29,7 +33,7 @@
   </div>
 
   <!-- 主体内容 -->   
-  <div id="main">
+  <div id="page">
 
     <!-- 音乐播放器 -->
     <div>
@@ -43,19 +47,15 @@
 
   </div>
 
-</div>
-
   <!-- 注脚声明 -->
   <div id="footer">
     <span>出大事了 大家都好可爱啊</span>
   </div>
-  <a class="to-top"><img src="images/totop.png" title="返回顶部"></a>
+</div>
 
-  <!-- JS加载区 -->
-  <script src="scripts/jquery.min.js"></script><!-- 返回顶部按钮 -->
-  <script src="scripts/jquery.toTop.min.js"></script>
-
-  <script src="scripts/main.js" defer></script>
+  <!-- 返回顶部按钮 -->
+  <button type=button onclick="topFunction()" id="totop">返回顶部</button>
 
 </body>
+
 </html>

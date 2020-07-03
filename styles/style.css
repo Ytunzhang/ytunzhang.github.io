@@ -1,17 +1,11 @@
 /*CSS重置*/
-		*{margin:0; padding:0; list-style:none; height: 100%;}
-		body{ background:#fff; font:normal 12px/22px 宋体;  }
-		img{ border:0;  }
-		a{ text-decoration:none; color:#333;  }
-		a:hover{ color:#1974A1;  }
-		.js{width:90%; margin:10px auto 0 auto; }
-		.js p{ padding:5px 0; font-weight:bold; overflow:hidden;  }
-		.js p span{ float:right; }
-		.js p span a{ color:#f00; text-decoration:underline;   }
-		.js textarea{ height:100px;  width:98%; padding:5px; border:1px solid #ccc; border-top:2px solid #aaa;  border-left:2px solid #aaa;  }
+* {margin:0; padding:0; list-style:none; height: 100%;}
+body { background:#fff; font:normal}
+img { border:0;  }
+a { text-decoration:none;}
 
-/*正文*/
-#container{
+/*全文样式*/
+#container {
     position:relative;
     margin: 0 auto;
     height: auto !important;
@@ -22,7 +16,7 @@
 /* 通用页眉样式 */
 
 #header {
-    /* 悬浮顶部代码（需要解决与文本重叠问题）
+    /* 悬浮顶部代码（...施工中: 文本重叠问题）
     z-index: 999;
     top: 0;
     filter: alpha(opacity=80);
@@ -94,38 +88,47 @@
 }
 
 /* 主题内容 */
-#main {
+#page {
     background: #fff;/*测试用底色*/
+    padding-bottom: 24px;/*等于footer绝对定位的高度*/
     flex: 1 0 auto;
 }
 
-/* 滚动广告 */
-.picFocus{ margin:0 auto;  width:467px; border:1px solid #ccc; padding:5px;  position:relative;  overflow:hidden;  zoom:1;   }
-.picFocus .hd{ width:100%; padding-top:5px;  overflow:hidden; }
-.picFocus .hd ul{ margin-right:-5px;  overflow:hidden; zoom:1; }
+/* 焦点图片 */
+.picFocus { 
+    margin:44px auto;  
+    width:640px;  
+    position:relative; 
+    overflow:hidden; 
+    zoom:1;   }
+.picFocus .hd {
+    padding-left:50px; /*缩略图框体位置*/
+    width:100%;  
+    overflow:hidden;
+ }
+.picFocus .hd ul{margin-right:-5px;  overflow:hidden; zoom:1; }
 .picFocus .hd ul li{ padding-top:5px; float:left;  text-align:center;  }
-.picFocus .hd ul li img{ width:109px; height:65px; border:2px solid #ddd; cursor:pointer; margin-right:5px;   }
+.picFocus .hd ul li img{ width:128px; height:72px; border:2px solid #ddd; cursor:pointer; margin-right:5px;   }
 .picFocus .hd ul li.on{ background:url("images/icoUp.gif") no-repeat center 0; }
-.picFocus .hd ul li.on img{ border-color:#f60;  }
+.picFocus .hd ul li.on img{ border-color:#7F1083;  }
 .picFocus .bd li{ vertical-align:middle; }
-.picFocus .bd img{ width:467px; height:230px; display:block;  }
+.picFocus .bd img{ width:640px; height:360px; display:block;  }
 
 
 /*homepage官网链接*/
 #linkbox {
     display: flex;
     flex-direction: column;
-    width: 840px;
+    width: 800px;
     position: relative;
     left: 50%;
     transform:translate(-50%,-50%);
-    margin-top:100px;
-    text-align:center;
+    margin-top:128px;
 }
 #linkbox ul {
     float:left;
     list-style-type:none;
-}
+}	
 #linkbox a {
     float:left;
     width:100px;
@@ -139,9 +142,11 @@
 
 /* 通用注脚样式 */
 #footer {
-    position: relative;
+    position: absolute;
     width:100%;
     bottom: 0;
+    clea:both;
+    height: 24px;/*footer绝对定位高度*/
     background-color: #ededed;
     color:#a5a8aa;
     text-align:center;
@@ -153,4 +158,26 @@
 #footer span{line-height: 24px;}
 #footer a {
     color:#a5a8aa;
+}
+
+/*返回顶部按钮样式*/
+#totop {
+    text-algin:center;
+    min-width:80px;
+    height: 28px;
+    line-height: 28px;
+    /* background:white url("../images/totop.png") no-repeat left bottom 5px; */
+    display: none; /* 默认隐藏 */
+    position: fixed; 
+    bottom: 26px; 
+    right: 16px; 
+    z-index: 99; 
+    border: none;
+    outline: none; 
+    background-color: #7f1083; /* 设置背景颜色 */
+    color: white; /* 文本颜色 */
+    cursor: pointer; 
+    border-radius: 20px;
+#totop:hover {
+    background-color: #555; 
 }
