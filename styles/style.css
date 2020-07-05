@@ -1,6 +1,7 @@
 /*CSS重置*/
 * {margin:0; padding:0; list-style:none; height: 100%;}
-body { background:#fff; font:normal}
+body { background:#fff; font:normal; -webkit-font-smoothing: antialiased;}
+html {-webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-text-size-adjust: 100%;-moz-osx-font-smoothing: grayscale;}
 img { border:0;  }
 a { text-decoration:none;}
 
@@ -28,10 +29,10 @@ a { text-decoration:none;}
 
     width: 100%;
     border-bottom: 5px solid #800080;
-    flex: 0 0 auto;
 }
 #header a {
     text-decoration: none
+    transition: color 0.3s;
 }
 #header a:hover { 
     text-decoration: none;
@@ -91,7 +92,6 @@ a { text-decoration:none;}
 #page {
     background: #fff;/*测试用底色*/
     padding-bottom: 24px;/*等于footer绝对定位的高度*/
-    flex: 1 0 auto;
 }
 
 /* 焦点图片 */
@@ -117,28 +117,28 @@ a { text-decoration:none;}
 
 /*homepage官网链接*/
 #linkbox {
+    flex: 1;
+    border: none;
+    margin:74px auto;
+    width: 50%;
     display: flex;
-    flex-direction: column;
-    width: 800px;
+    align-items: center;
+    font-size: 14px;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+#linkbox a{
+    color: black;
+    transition: color 0.3s;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
     position: relative;
-    left: 50%;
-    transform:translate(-50%,-50%);
-    margin-top:128px;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
 }
-#linkbox ul {
-    float:left;
-    list-style-type:none;
-}	
-#linkbox a {
-    float:left;
-    width:100px;
-    text-decoration:none;
-    color:white;
-    background-color:#fff;
-    padding:16px 16px;
-}
-#linkbox a:hover {background-color:#fff}
-#linkbox li {display:inline}
+#linkbox a:hover{color:#7f1083;}
 
 /* 通用注脚样式 */
 #footer {
@@ -166,18 +166,18 @@ a { text-decoration:none;}
     min-width:80px;
     height: 28px;
     line-height: 28px;
-    /* background:white url("../images/totop.png") no-repeat left bottom 5px; */
     display: none; /* 默认隐藏 */
     position: fixed; 
     bottom: 26px; 
     right: 16px; 
-    z-index: 99; 
-    border: none;
+    z-index: 3; 
+    border: 2px solid #7f1083;
     outline: none; 
-    background-color: #7f1083; /* 设置背景颜色 */
-    color: white; /* 文本颜色 */
+    background-color: #fff; /* 背景颜色 */
+    color: #7f1083; /* 文本颜色 */
     cursor: pointer; 
     border-radius: 20px;
-#totop:hover {
-    background-color: #555; 
+/*未知原因失效中*/#totop:hover {
+    background-color: #7f1083; 
+    color: #fff;
 }
