@@ -15,9 +15,8 @@ a { text-decoration:none;}
 }
 
 /* 通用页眉样式 */
-
 #header {
-    /* 悬浮顶部代码（...施工中: 文本重叠问题）
+/* 悬浮页眉 故障中
     z-index: 999;
     top: 0;
     filter: alpha(opacity=80);
@@ -25,7 +24,7 @@ a { text-decoration:none;}
     -khtml-opacity: 0.8;
     opacity: 0.8;    
     position:fixed; 
-    */
+*/
 
     width: 100%;
     border-bottom: 5px solid #800080;
@@ -65,7 +64,7 @@ a { text-decoration:none;}
     top: -24px;
 }
 #main-nav {/*顶部导航栏位置*/
-    top: 32px;
+    top: 38px;
     width: 560px;
 }
 #main-nav li,
@@ -90,9 +89,10 @@ a { text-decoration:none;}
 
 /* 主题内容 */
 #page {
-    background: #fff;/*测试用底色*/
+    background: gray;/*测试用底色*/
     padding-bottom: 24px;/*等于footer绝对定位的高度*/
 }
+
 
 /* 焦点图片 */
 .picFocus { 

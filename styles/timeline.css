@@ -49,11 +49,11 @@ img {
 #cd-timeline {
   position: relative;
   padding: 2em 0;
-  margin-top: 2em;
+  margin-top: 0;/*小屏显示时会继承的上外边界，默认为2em*/
   margin-bottom: 2em;
 }
 #cd-timeline::before {
-  /* this is the vertical line */
+  /* 竖时间线样式 */
   content: '';
   position: absolute;
   top: 0;
@@ -64,7 +64,7 @@ img {
 }
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
-    margin-top: 3em;
+    margin-top: 0;/*大屏显示时的上外边界，默认为3em*/
     margin-bottom: 3em;
   }
   #cd-timeline::before {
