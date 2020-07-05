@@ -89,7 +89,7 @@ a { text-decoration:none;}
 
 /* 主题内容 */
 #page {
-    background: gray;/*测试用底色*/
+    background: white;/*测试用底色*/
     padding-bottom: 24px;/*等于footer绝对定位的高度*/
 }
 
