@@ -109,7 +109,7 @@ a { text-decoration:none;}
 .picFocus .hd ul{margin-right:-5px;  overflow:hidden; zoom:1; }
 .picFocus .hd ul li{ padding-top:5px; float:left;  text-align:center;  }
 .picFocus .hd ul li img{ width:128px; height:72px; border:2px solid #ddd; cursor:pointer; margin-right:5px;   }
-.picFocus .hd ul li.on{ background:url("images/icoUp.gif") no-repeat center 0; }
+.picFocus .hd ul li.on{ background:url("") no-repeat center 0; }
 .picFocus .hd ul li.on img{ border-color:#7F1083;  }
 .picFocus .bd li{ vertical-align:middle; }
 .picFocus .bd img{ width:640px; height:360px; display:block;  }
