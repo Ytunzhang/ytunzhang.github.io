@@ -9,6 +9,7 @@
   <!-- JS脚本加载 -->
   <script type="text/javascript" src="scripts/jquery1.42.min.js"></script> <!-- 本地jquery库1.42ver -->
   <script type="text/javascript" src="scripts/jquery.SuperSlide.min.js"></script><!-- superslide插件 -->
+  <script type="text/javascript" src="scripts/changeSrc.js"></script><!--更换iframe链接插件▲请更新！现在是非常简陋的逐一添加版本！-->
   <script type="text/javascript" src="scripts/totop.js"></script><!-- 返回顶部按钮插件 -->
 </head>
 
@@ -52,13 +53,73 @@
           <img src="" alt="">
         </div>
         <div class="cd-timeline-content">
-          <h2>6周年Live in 明治神宫野球场&秩父宫</h2>
-          <p>夏巡final</p>
-          <a id="bdl-1st" href="#bplayer" class="cd-read-more" onclick="changeSrc()">DAY 1</a>
-          <script>changeSrc= function(){document.getElementById("bv").src="https://player.bilibili.com/player.html?aid=58039154&bvid=BV1C4411c76i&cid=103060958&as_wide=1&high_quality=1&danmaku=1";}</script><!--切换网址函数🔺存在问题，将调整为使用按钮跳转到相应界面；目前无法读取并连续播放分P-->
-          <!--<a id="bdl-1st" href="#bplayer" class="cd-read-more" onclick="changeSrc()">DAY 2</a>
-          <a id="bdl-1st" href="#bplayer" class="cd-read-more" onclick="changeSrc()">DAY 3</a>-->
-          <span class="cd-date">2018</span>
+          <h2>1周年Live in 幕张展览馆</h2>
+          <p>乃木坂46 1ST YEAR BIRTHDAY LIVE</br>MAKUHARI MESSE</br>2013.2.22</p>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_01_01()">Part 1</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_01_02()">Part 2</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_01_03()">Part 3</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_01_04()">Part 4</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_01_Documentary()">Documentary</a>
+          <span class="cd-date"><img src="" alt=""/></span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+          <img src="" alt="">
+        </div>
+        <div class="cd-timeline-content">
+          <h2>2周年Live in 横滨竞技场</h2>
+          <p>NOGIZAKA46 2ND YEAR BIRTHDAY LIVE</br>YOKOHAMA ARENA</br>2014.2.22</p>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_02_01()">Part 1</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_02_02()">Part 2</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_02_03()">Part 3</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_02_04()">Part 4</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_02_making()">Making</a>
+          <span class="cd-date"><img src="" alt=""/></span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+          <img src="" alt="">
+        </div>
+        <div class="cd-timeline-content">
+          <h2>3周年Live in 西武巨蛋</h2>
+          <p>乃木坂46 3RD YEAR BIRTHDAY LIVE</br>SEIBU DOME</br>2015.2.22</p>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_03_01()">Part 1</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_03_02()">Part 2</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_03_03()">Part 3</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_03_making()">Making</a>
+          <span class="cd-date"><img src="" alt=""/></span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+          <img src="" alt="">
+        </div>
+        <div class="cd-timeline-content">
+          <h2>Merry X'mas Show 2015 in 日本武道館</h2>
+          <p>反正也没有人陪你过圣诞吧！</br>2015.12.20</p>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_XmasShow_01()">Part 1</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_XmasShow_02()">Part 2</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_XmasShow_03()">Part 3</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_XmasShow_04()">Part 4</a>
+          <span class="cd-date"><img src="" alt=""/></span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+          <img src="" alt="">
+        </div>
+        <div class="cd-timeline-content">
+          <h2>4周年Live in 明治神宫棒球场</h2>
+          <p>---</p>
+          <a href="https://www.bilibili.com/video/BV1Ux41167Zs?p=1" class="cd-read-more">前往Bilibili观看全场</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc__04_making()">Making</a>
+          <span class="cd-date"><img src="" alt=""/></span>
         </div>
       </div>
  
@@ -67,10 +128,14 @@
           <img src="" alt="">
         </div>
         <div class="cd-timeline-content">
-          <h2>五周年Live in 埼玉超级竞技场</h2>
-          <p>---</p>
-          <a id="bdl-2nd" href="#bplayer" class="cd-read-more">永远的奈奈未</a>
-          <span class="cd-date">2017</span>
+          <h2>5周年暨桥本奈奈未毕业Live in 埼玉超级竞技场</h2>
+          <p style="color:green;">いい人</p>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_05_01()">Part 1</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_05_02()">Part 2</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_05_03()">Part 3</a>
+          <a href="https://www.bilibili.com/video/BV1is411H7P8?p=5" target="_blank" class="cd-read-more">DAY 2~3</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc__05_making()">Making</a>
+         <span class="cd-date"><img src="" alt=""/></span>
         </div>
       </div>
 
@@ -79,12 +144,60 @@
             <img src="" alt="">
           </div>
           <div class="cd-timeline-content">
-            <h2>首次东京巨蛋</h2>
-            <p>---</p>
-            <a id="tokyodome-1st" href="#bplayer" class="cd-read-more">---</a>
-            <span class="cd-date">2017</span>
+            <h2>首登 东京巨蛋</h2>
+            <p>真夏の全国ツアー2017 FINAL！IN TOKYO DOME</br><b>紫紫人不得不看的神Live</b></p>
+            <a href="#bplayer" class="cd-read-more" onclick="changeSrc_TokyoDome_01()">Part 1</a>
+            <a href="#bplayer" class="cd-read-more" onclick="changeSrc_TokyoDome_02()">Part 2</a>
+            <a href="#bplayer" class="cd-read-more" onclick="changeSrc_TokyoDome_03()">Part 3</a>
+            <a href="#bplayer" class="cd-read-more" onclick="changeSrc_TokyoDome_04()">Part 4</a>
+            <a href="#bplayer" class="cd-read-more" onclick="changeSrc_TokyoDome_making()">Making</a>
+            <span class="cd-date"><img src="" alt=""/></span>
           </div>
         </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+          <img src="" alt="">
+        </div>
+        <div class="cd-timeline-content">
+          <h2>6周年Live in 明治神宫野球场&秩父宫</h2>
+          <p>Synchronicity</br>两个相邻场地同时进行的乃团史上最大规模演唱会</p>
+          <a id="bdl-1st" href="#bplayer" class="cd-read-more" onclick="changeSrc_06_01()">Day 1</a>
+          <a id="bdl-1st" href="#bplayer" class="cd-read-more" onclick="changeSrc_06_02()">Day 2</a>
+          <a id="bdl-1st" href="#bplayer" class="cd-read-more" onclick="changeSrc_06_03()">Day 3</a>
+          <a id="bdl-1st" href="#bplayer" class="cd-read-more" onclick="changeSrc_06_sp()">特典</a>
+          <span class="cd-date"><img src="" alt=""/></span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+          <img src="" alt="">
+        </div>
+        <div class="cd-timeline-content">
+          <h2>7周年D4暨西野七濑毕业Live in 大阪京瓷巨蛋</h2>
+          <p>绕远路走到了家门口快乐打卡下班的胡萝卜颜鸽子</p>
+          <a class="cd-read-more" href="https://www.bilibili.com/video/BV1A7411b7sY?p=1" target="bv">DAY 1~3</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_07_01()">Part 1</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_07_02()">Part 2</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_07_03()">Part 3</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_07_04()">Part 4</a>
+          <a href="#bplayer" class="cd-read-more" onclick="changeSrc_07_sp()">特典</a>
+          <span class="cd-date"><img src="" alt=""/></span>
+        </div>
+      </div>
+
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+          <img src="" alt="">
+        </div>
+        <div class="cd-timeline-content">
+          <h2>8周年Live in 名古屋巨蛋</h2>
+          <p>乃木坂46 8TH BRITHDAY LIVE</p>
+          <a class="cd-read-more">索爹快吐碟</a>
+          <span class="cd-date"><img src="" alt=""/></span>
+        </div>
+      </div>
 
     </section>
 
