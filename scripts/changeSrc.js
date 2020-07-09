@@ -38,7 +38,7 @@ function changeSrc_04_making(){document.getElementById("bv").src="https://player
 
 /*17年5周年桥本奈奈未毕业演唱会 后两天直接跳转*/
 function changeSrc_05_01(){document.getElementById("bv").src="https://player.bilibili.com/player.html?aid=21351430&bvid=BV1cW411u7Gk&cid=35110788&page=1&as_wide=1&high_quality=1&danmaku=1";}
-function changeSrc_02_02(){document.getElementById("bv").src="https://player.bilibili.com/player.html?aid=21351430&bvid=BV1cW411u7Gk&cid=35110788&page=2&as_wide=1&high_quality=1&danmaku=1";}
+function changeSrc_05_02(){document.getElementById("bv").src="https://player.bilibili.com/player.html?aid=21351430&bvid=BV1cW411u7Gk&cid=35110788&page=2&as_wide=1&high_quality=1&danmaku=1";}
 function changeSrc_05_03(){document.getElementById("bv").src="https://player.bilibili.com/player.html?aid=21351430&bvid=BV1cW411u7Gk&cid=35110788&page=3&as_wide=1&high_quality=1&danmaku=1";}
 function changeSrc_05_making(){document.getElementById("bv").src="https://player.bilibili.com/player.html?aid=21394467&bvid=BV1LW411u7VE&cid=35193719&page=1&as_wide=1&high_quality=1&danmaku=1";}
 
